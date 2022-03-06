@@ -1,0 +1,22 @@
+
+@import 'mixins/mixin';
+@import 'typography';
+@import 'variables';
+@import 'partials/partials';
+@import 'pages/pages';
+@import 'modules/modules';
+
+// @function weight($weight-name){
+//     @return map-get($font-weights, $weight-name );
+// }
+// @mixin flexCenter($direction) {
+//         display: flex;
+//          justify-content: center;
+//          align-items: center;
+//          margin: 0 auto;
+//          flex-direction: $direction;
+// }
+
+
+
+

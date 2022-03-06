@@ -1,0 +1,82 @@
+.experience-wraper{
+    border-left: 1px solid #333;
+    padding: 0 20px 0 40px;
+    position: relative;
+    margin-top: 10px;
+
+    
+        
+    
+
+   .experience-icon-wraper{
+       position: absolute;
+       top: 0;
+       left: -16px;
+       background: $primary-color;
+       width: 35px;
+       height: 35px;
+       border-radius: 50%;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -ms-border-radius: 50%;
+       -o-border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+    }
+
+        .time{
+            background: #252525;
+            padding: 1px 10px;
+            display: inline-block;
+            font-family: $open-sans;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            border-radius: 20px;
+            -webkit-border-radius: 20p;
+            -moz-border-radius: 20p;
+            -ms-border-radius: 20p;
+            -o-border-radius: 20p;
+            text-transform: uppercase;
+
+
+        }
+
+        h7{
+            margin: 7px 0 10px;
+
+            .work-place{
+                
+                font-size: 15px;
+                opacity: 0.8; 
+                padding-left: 26px;
+                position: relative;
+
+                &::before{
+                    content: '';
+                    width: 10px;
+                    height: 2px;
+                    background: #fff;
+                    position: absolute;
+                    top: 9px;
+                    left: 7px;
+                }
+        }
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+
+        
+            @include respond (phone-large) {
+                margin-bottom: 50px;
+                margin-top: 0;
+
+            }
+
+}

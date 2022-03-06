@@ -1,0 +1,74 @@
+@import '../variables';
+
+@mixin h1 {
+    font-family: $poppins;
+    font-size: $heading-1-size;
+    font-weight: $heading-1-weight;
+    color: $heading-1-color;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+}
+
+@mixin h2 {
+    font-family: $poppins;
+    font-size: $heading-2-size;
+    font-weight: $heading-2-weight;
+    text-transform: uppercase;
+}
+
+@mixin h3 {
+    font-family: $poppins;
+    font-size: $heading-3-size;
+    font-weight: $heading-3-weight;
+    text-transform: uppercase;
+}
+
+@mixin h4 {
+    font-family: $poppins;
+    font-size: $heading-4-size;
+    font-weight: $heading-4-weight;
+    text-transform: uppercase;
+}
+
+@mixin h5 {
+    font-family: $poppins;
+    font-size: $heading-5-size;
+    font-weight: $heading-5-weight;
+    text-transform: uppercase;
+}
+
+@mixin h6 {
+    font-family: $open-sans;
+    font-size: $heading-6-size;
+    font-weight: $heading-6-weight;
+    text-transform: uppercase;
+}
+
+@mixin h7 {
+    font-family: $open-sans;
+    font-size: $heading-7-size;
+    font-weight: $heading-7-weight;
+    text-transform: uppercase;
+}
+
+@mixin paragraph-1 {
+    font-family: $open-sans;
+    font-size: $paragraph-1-size;
+    font-weight: $paragraph-1-weight;
+}
+
+@mixin p {
+    font-family: $open-sans;
+    font-size: $paragraph-2-size;
+    font-weight: $paragraph-2-weight;
+    margin-bottom: 0;
+}
+
+@mixin ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+

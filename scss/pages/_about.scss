@@ -1,0 +1,220 @@
+
+
+
+.info-section{
+
+    .info-content-part{
+
+        .about-info-title {
+            margin-bottom: 25px;
+        }
+        .info-img{
+            text-align: center;
+            .about-img{          
+                width: 230px;
+                height: 230px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border: 4px solid #252525;
+                margin: auto;
+                display: none;
+                margin-bottom: 25px;
+
+                @include respond (phone-medium){
+                    display: block;
+                }
+                }
+        }
+        .about-list{
+            font-family: $open-sans;
+
+            & li:not(:last-child){
+                padding-bottom: 20px;
+            }
+
+            .title{
+                text-transform: capitalize;
+            }
+            .value{
+                font-weight: 600;
+            }
+        }
+
+        .btn{
+            margin-top: 20px;
+        }
+    }
+
+    .info-box-wraper{
+
+        .info-box{
+            border: 1px solid #252525;
+            padding: 20px 30px 25px 40px ;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            margin-bottom: 30px;
+
+            @include respond (phone-medium) {
+            
+                padding: 15px 15px 15px 15px ;
+         
+             }
+
+            .achive-counter{
+
+                display: flex;
+                align-items: center;
+
+
+                h3{
+                    color: $primary-color;
+                    position: relative;
+    
+                    // &::after{
+                    //     content: '+';
+                    //     font-size: 33px;
+                    //     font-weight: 300;
+                    //     position: absolute;
+                    //     top: 2px;
+                    //     right: 110px;
+    
+                    // }
+    
+
+                }
+                sup{
+                    font-size: 35px;
+                    font-weight: 700;
+                    color: $primary-color;
+                }
+
+            }
+
+
+
+            p{
+                font-family: $open-sans;
+                padding-left: 40px;
+                text-transform: capitalize;
+                position: relative;
+                font-weight: 500;
+
+                @include respond (phone-medium) {
+            
+                    padding-left: 0;
+                    font-size: 14px;
+             
+                 }
+
+                &::before{
+                    content: '';
+                    width: 30px;
+                    height: 1px;
+                    background: #777;
+                    position: absolute;
+                    left: 0;
+                    top:10px;
+
+                    @include respond (phone-medium) {
+            
+                        display: none;
+                 
+                     }
+                }
+            }
+}
+    }
+
+
+}
+
+
+
+
+.skills-section{
+
+    text-align: center;
+    svg.radial-progress {
+        height: auto;
+        max-width: 60%;
+        padding: 1em;
+        transform: rotate(-90deg);
+        width: 100%;
+        
+      }
+      
+      svg.radial-progress circle {
+        fill: $background-color;
+        stroke: $primary-color;
+        stroke-dashoffset: 219.91148575129; 
+        stroke-width: 5;
+      }
+      
+      svg.radial-progress circle.incomplete { 
+        stroke-width: 6;
+          stroke: #252525;
+          opacity: 1;
+        }
+      
+      svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+      
+      svg.radial-progress text {
+        fill: #fff;
+        text-anchor: middle;
+      }
+
+      .skill-section{
+        color:  #3c4761;
+        background: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img/skill-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        text-align: center;
+    }
+    
+    
+    .skill-section h2::after{
+        background: #dfe8ed;
+    }
+    
+    .skill-section .box{
+        margin-top: 8.9rem;
+    }
+    .skill-section .box h3{
+        margin-top: 3.5rem;
+    }
+    
+    svg.radial-progress circle{
+        stroke-width: 5;
+    }
+    
+    svg.web-design circle{
+        stroke: $primary-color;
+    }
+
+    p{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+
+.experience-section-heading{
+    margin-bottom: 50px;
+}
+
+.experience-wraper{
+    @include respond (phone-medium) {
+        margin-left: 25px;
+    }
+    
+}
+
+
+

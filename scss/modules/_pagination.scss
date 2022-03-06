@@ -1,0 +1,41 @@
+.pagination-wraper{
+    display: flex;
+    justify-content: center;
+
+    .pagination{
+
+        .page-item{
+            margin: 0 10px;
+
+            .page-link{
+                background-color: #252525;
+                width: 43px;
+                height: 43px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-color: #252525;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 600;
+
+                &.active{
+                        background-color: $primary-color;
+                    
+                }
+
+                &:hover{
+                    background-color: $primary-color;
+                }
+                
+}
+        }
+    }
+
+}
+

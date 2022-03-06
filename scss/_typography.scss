@@ -1,0 +1,95 @@
+@import 'mixins/typography';
+@import 'variables';
+
+body {
+    background: $background-color;
+    font-family: $open-sans;
+    font-weight: 500;
+    font-size: $paragraph-2-size;
+    color: $paragraph-color;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+h1 {
+    @include h1;
+}
+h2 {
+    @include h2;
+}
+h3 {
+    @include h3;
+
+    @include respond (phone-medium) {
+            
+        font-size: 40px;
+ 
+     }
+}
+
+
+h4 {
+    @include h4;
+
+    @include respond (tab-port) {
+            
+       font-size: 38px;
+       line-height: 38px;
+
+    }
+    @include respond (phone-medium) {
+            
+        font-size: 29px;
+        line-height: 29px;
+ 
+     }
+}
+h5 {
+    @include h5;
+
+    @include respond (phone-medium) {
+            
+        font-size: 21px;
+ 
+     }
+}
+
+
+h6 {
+    @include h6;
+
+    @include respond (phone-medium) {
+            
+        font-size: 19px;
+        line-height: 19px;
+ 
+     }
+}
+
+h7 {
+    @include h7;
+}
+
+paragraph-1{
+    @include paragraph-1;
+}
+p  {
+    @include p;
+
+    @include respond (phone-medium) {
+            
+        font-size: 14px;
+     }
+}
+
+ul {
+    @include ul;
+}
+
+
+.paragraph-1{
+    @include paragraph-1;
+}
